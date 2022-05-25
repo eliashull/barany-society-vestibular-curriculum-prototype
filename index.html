@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="keywords" content="prototype curriculum reference tool">
+        <meta name="description" content="A user interface prototype for a curriculum reference tool. Developed May 2022.">
+        <meta name="author" content="Bryan Elias Hull">
+        <!-- Bootstrap CSS -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <!-- Google Fonts -->
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+        <!-- Font Awesome Icons -->
+            <script src="https://kit.fontawesome.com/f450468980.js" crossorigin="anonymous"></script>
+        <!-- Main Stylesheet -->
+            <link href="css/style.css" rel="stylesheet">
+        <title>Barany Society Vestibular Curriculum Prototype</title>
+    </head>
+    <body>
+	<nav class="navbar"><!-- Begin navigation bar and site menu -->
+		<div class="container-fluid">
+			<a class="navbar-brand">Barany Society Vestibular Curriculum Prototype</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+				  <i class="fa-solid fa-bars"></i>
+			</button>
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Barany Society Vestibular Curriculum</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<strong class="table-of-contents-heading">Table of Contents</strong>
+						<ul class="navbar-nav justify-content-end flex-grow-1">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">Anatomy, Physiology and Physics</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Vestibular symptoms</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">History taking</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Bedside examination</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Ancillary testing</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Disorders and diseases</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Treatment</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Professional attitudes</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Overview of research topics</a>
+							</li>
+						</ul>
+						<div class="search-box-display">
+							<form class="d-flex offcanvas-search" role="search">
+								<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+							<button class="btn btn-outline-success" type="submit">Search</button>
+						</div>
+						<div class="barany-logo">
+							<img src="img/barany-society.jpg">
+						</div>
+					</div>
+				</div>
+		</div>
+	</nav><!-- End navigation bar and site menu -->
+	<div class="container"><!-- Begin of site container -->
+		<div class="d-flex justify-content-end"><!-- Begin knowledge level legend button and card -->
+			<button class="btn btn-primary knowledge-button" type="button" data-bs-toggle="collapse" data-bs-target="#knowledge-level-legend" aria-expanded="false" aria-controls="knowledge-level-legend">
+			<i class="fa-regular fa-circle-question"></i> Knowledge Level Legend
+			</button>
+		</div>
+		<div class="collapse" id="knowledge-level-legend">
+			<div class="card card-body" id="knowledge-level-legend-card">
+				<div class="d-flex">
+					<span class="badge bg-primary rounded-pill" id="pill-legend">Neurologist</span> 
+					<span class="badge bg-success rounded-pill" id="pill-legend">Otorhino</span> 
+					<span class="badge bg-warning rounded-pill" id="pill-legend">Audiovestibular</span> 
+					<span class="badge bg-danger rounded-pill" id="pill-legend">Physiotherapist</span>
+				</div>
+				<strong>Levels of knowledge in Vestibular Medicine Curriculum</strong>
+				<ol>
+					<li>Knows of</li>
+					<li>Knows basic concepts</li>
+					<li>Knows generally (able to make a complete diagnosis)</li>
+					<li>Knows specifically and broadly (competent to treat as far as possible), knowledge of own capacities and limitations, ready for referral to other specialists</li>
+				</ol>
+				<strong>Levels of skills in Vestibular Medicine Curriculum</strong>
+				<ol>
+					<li>Has observed or knows of </li>
+					<li>Can manage with assistance </li>
+					<li>Can manage on the whole but may need assistance </li>
+					<li>Competent to manage without assistance including complications, knowledge of own capacities and limitations, ready for referral to other specialists</li>
+				</ol>
+			</div>
+		</div><!-- End knowledge level legend button and card -->
+		<h1>Anatomy, Physiology, and Physics</h1>
+			<!-- I. ANATOMY SECTION BEGIN --> 
+			<h2><a href="#anatomy-collapse" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">I. ANATOMY</a></h2>
+				<div class="collapse" id="anatomy-collapse"><!-- Section I. Collapse Container Begin --> 
+				<h3>A. Temporal bone</h3>
+					<div class="d-flex justify-content-end">
+						<em>Knowledge Level</em>
+					</div>
+					<ol>
+						<li>
+						<a href="#anatomy-auricle" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">Anatomy of auricle, external auditory canal and tympanic membrane</a> 
+						<div class="d-flex justify-content-end">
+							<span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span>
+						</div>
+							<div class="collapse" id="anatomy-auricle">
+								<div class="card card-body">
+									<strong>Literature</strong>
+									<p class="citation">Armbrecht, Tom. (2018). Getting Over Stumbling Blocks (of Text): Creating Engaging Content Pages. <em>ObjectLessons</em>. Retrieved from https://object-lessons.com/getting-over-stumbling-blocks-of-text-creating-engaging-content-pages/</p>
+									<strong>Additional Resources</strong>
+									<p><a href="#"><i class="fa-solid fa-video"></i> NOVEL - Video</a> | <a href="#"><i class="fa-solid fa-file"></i> NOVEL - PDF</a> </p>
+								</div>
+							</div>
+						</li>
+						<li><a href="#anatomy-middle-ear" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">Anatomy of the middle ear, ossicles and Eustachian tube, mastoid </a> 
+						<div class="d-flex justify-content-end">
+							<span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span>
+						</div>
+						<div class="collapse" id="anatomy-middle-ear">
+							<div class="card card-body">
+								<strong>Literature</strong>
+								<p class="citation">Armbrecht, Tom. (2018). Getting Over Stumbling Blocks (of Text): Creating Engaging Content Pages. <em>ObjectLessons</em>. Retrieved from https://object-lessons.com/getting-over-stumbling-blocks-of-text-creating-engaging-content-pages/</p>
+								<strong>Additional Resources</strong>
+								<p><a href="#"><i class="fa-solid fa-video"></i> NOVEL - Video</a> | <a href="#"><i class="fa-solid fa-file"></i> NOVEL - PDF</a> </p>
+							</div>
+						</div>
+						</li>
+						<li><a href="#bony-anatomy-inner-ear" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">Bony anatomy of the inner ear</a>
+						<div class="d-flex justify-content-end">
+							<span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span>
+						</div>
+						<div class="collapse" id="bony-anatomy-inner-ear">
+							<div class="card card-body">
+								<strong>Literature</strong>
+								<p class="citation">Armbrecht, Tom. (2018). Getting Over Stumbling Blocks (of Text): Creating Engaging Content Pages. <em>ObjectLessons</em>. Retrieved from https://object-lessons.com/getting-over-stumbling-blocks-of-text-creating-engaging-content-pages/</p>
+								<strong>Additional Resources</strong>
+								<p><a href="#"><i class="fa-solid fa-video"></i> NOVEL - Video</a> | <a href="#"><i class="fa-solid fa-file"></i> NOVEL - PDF</a> </p>
+							</div>
+						</div>
+						</li>
+						<li><a href="#facial-canal" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">Facial canal, petrous apex</a>
+						<div class="d-flex justify-content-end">
+							<span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span>
+						</div>
+						<div class="collapse" id="facial-canal">
+							<div class="card card-body">
+								<strong>Literature</strong>
+								<p class="citation">Armbrecht, Tom. (2018). Getting Over Stumbling Blocks (of Text): Creating Engaging Content Pages. <em>ObjectLessons</em>. Retrieved from https://object-lessons.com/getting-over-stumbling-blocks-of-text-creating-engaging-content-pages/</p>
+								<strong>Additional Resources</strong>
+								<p><a href="#"><i class="fa-solid fa-video"></i> NOVEL - Video</a> | <a href="#"><i class="fa-solid fa-file"></i> NOVEL - PDF</a> </p>
+							</div>
+						</div>
+						</li>
+					</ol>	
+				<h3>B. Afferent Auditory and Vestibular Pathways</h3>
+					<div class="d-flex justify-content-end">
+						<em>Knowledge Level</em>
+					</div>
+					<ol>
+						<li>Membranous labyrinth <div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Oval and Round Window <div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Cochlear Duct (basal and apical turn) and Organ of Corti <div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Sensory hair cells<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Semicircular canals: Ducts and  Ampullae<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Common Crus<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Utricule and Saccule. Maculae. Otoliths. Otoconia<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Endolymphatic Sac. Endolymph, perilymph<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Cochlear Nerve<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Superior Vestibular Nerve<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Inferior Vestibular Nerve<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Cerebello-pontine angle<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+					</ol>
+				<h3>C. Medulla, Pons and Midbrain</h3>
+					<div class="d-flex justify-content-end">
+						<em>Knowledge Level</em>
+					</div>
+					<ol>
+						<li>Cochlear Nuclei<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Inferior Colliculus<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Vestibular Nuclei<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Oculomotor nuclei<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>PPRF<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Medial longitudinal fasciculus<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Inferior, Middle and Superior Cerebellar peduncles<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Interstitial Nucleus of Cajal<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Rostral interstitial nucleus of the MLF<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Perihypoglossal complex<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Lateral and medial medulla<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+					</ol>
+					<h3>D. Cerebellum</h3>
+					<div class="d-flex justify-content-end">
+						<em>Knowledge Level</em>
+					</div>	
+					<ol>
+						<li>Vestibulocerebellum<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Deep Nuclei <div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Mollaret’s Triangle : Dentate - Red Nucleus - Inferior Olive<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+					</ol>
+				<h3>E. Thalamus and Cortex</h3>
+					<div class="d-flex justify-content-end">
+						<em>Knowledge Level</em>
+					</div>	
+					<ol>
+						<li>Medial Geniculate Body<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Heschl’s Gyrus<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Auditory Cortex: The core, the belt, parabelt and the what and where pathways<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Vestibular Projections to thalamus and to cortex<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Vestibular cortex<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+					</ol>
+				<h3>F. Visuo-vestibular system</h3>	
+					<div class="d-flex justify-content-end">
+						<em>Knowledge Level</em>
+					</div>	
+					<ol>
+						<li>Visual vestibular afferents<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Oculomotor nerves<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Ocular muscles<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+					</ol>
+				<h3>G. Vestibulo-spinal</h3>	
+					<div class="d-flex justify-content-end">
+						<em>Knowledge Level</em>
+					</div>	
+					<ol>
+						<li>Vestibulospinal tracts<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+					</ol>
+				<h3>H. Proprioception</h3>	
+					<div class="d-flex justify-content-end">
+						<em>Knowledge Level</em>
+					</div>	
+					<ol>
+						<li>Vestibular afferents<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Posterior collumns<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Proprioceptive receptors<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+					</ol>
+				<h3>I. Vascular</h3>	
+					<div class="d-flex justify-content-end">
+						<em>Knowledge Level</em>
+					</div>	
+					<ol>
+						<li>Vertebral and basilar Arteries<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Posterior Inferior Cerebellar Artery PICA<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Anterior Inferior Cerebellar Artery AICA<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Superior Cerebellar Artery SCA<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Internal Auditory Artery<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Anterior Vestibular Artery<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Labyrinthine Artery<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Main Cochlear Artery<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Cochleo-Vestibular Artery<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Posterior Vestibular Artery<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Cochlear Artery<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Sigmoid/ Transverse Sinus and Jugular Vein<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+					</ol>
+				</div><!-- Section I. Collapse Container End --> 
+			<!-- I. ANATOM SECTION END --> 
+			<!-- II. PHYSIOLOGY AND PATHOPHYSIOLOGY SECTION BEGIN -->	
+			<h2><a href="#physiology-collapse" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">II. PHYSIOLOGY AND PATHOPHYSIOLOGY</a></h2>
+				<div class="collapse" id="physiology-collapse"><!-- Section II. Collapse Container Start --> 
+				<h3>A. Vestibular organs</h3>
+					<div class="d-flex justify-content-end">
+						<em>Knowledge Level</em>
+					</div>	
+					<ol>
+						<li>Canals (cupula, physics incl. frequency dependency, gain, phase, time constant, etc.)<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Otoliths (macula, physics incl. frequency dependency, etc.)<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Ewalds' laws<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Reflexes:</li>
+							<ol>
+								<li>Hair cells: different types, asymmetry<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+								<li>Tilt-translation ambiguity<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+								<li>Push-pull mechanism<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+								<li>Generation of peripheral nystagmus<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+								<li>Endolymphatic system<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+							</ol>
+					</ol>
+				<h3>B. Functions of the vestibular system (incl. automatisation and speed)</h3>
+					<div class="d-flex justify-content-end">
+						<em>Knowledge Level</em>
+					</div>
+					<ol>
+						<li>Gaze stabilisation<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Balance / postural control<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+							<ol>
+								<li>Spatial orientation, navigation (allocentric, egocentric, etc.)<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+								<li>Multisensory processing of signals regarding these functions<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+							</ol>
+						<li>Limitations in multisensory detection (e.g. motion sickness, visuo-vestibular conflict)<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+					</ol>
+				<h3>C. Oculomotor system</h3>
+					<div class="d-flex justify-content-end">
+						<em>Knowledge Level</em>
+					</div>
+					<ol>
+						<li>Eye muscles and neuromuscular junction<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Velocity storage<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Smooth pursuit<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Optokinetic response<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Gaze holding incl. neural integrator<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Vergence system<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Saccadic system<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Fixation suppression<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+					</ol>
+				<h3>D. Vestibular plasticity</h3>
+					<div class="d-flex justify-content-end">
+						<em>Knowledge Level</em>
+					</div>
+					<ol>
+						<li>Adaptation<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Habituation<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Sensory substitution and sensory weighing<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Vestibular compensation<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+					</ol>
+				<h3>E. Vestibulocerebellum</h3>
+					<div class="d-flex justify-content-end">
+						<em>Knowledge Level</em>
+					</div>
+					<ol>
+						<li>Cerebellar flocculus/paraflocuulus<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Cerebellar nodulus and ventral uvula<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Cerebellar vermis and fastigial nucleus<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+					</ol>
+				<h3>F. Pupillary function</h3>
+				<h3>G. Vestibulo-autonomic interaction</h3>	
+				<h3>H. Vestibulo-limbic interaction</h3>	
+				<h3>I. Cervico-vestibular interaction</h3>	
+				<h3>J. Neurochemistry of the vestibular system</h3>	
+				<h3>K. Functional brain connectivity</h3>	
+				<h3>L. Blood pressure regulation</h3>	
+				<h3>M. Migraine</h3>
+					<div class="d-flex justify-content-end">
+						<em>Knowledge Level</em>
+					</div>
+					<ol>
+						<li>Concept of primary headaches<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+						<li>Neurobiology of migraine (incl. aura)<div class="d-flex justify-content-end"><span class="badge bg-primary rounded-pill">2</span> <span class="badge bg-success rounded-pill">3</span> <span class="badge bg-warning rounded-pill">3</span> <span class="badge bg-danger rounded-pill">2</span></div></li>
+					</ol>	
+				</div><!-- Section II. Collapse Container End--> 
+			<!-- II. PHYSIOLOGY AND PATHOPHYSIOLOGY SECTION CLOSE -->
+			<!-- III. PEDIATRIC ASPECTS SECTION BEGIN -->
+			<h2><a href="#pediatric-collapse" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">III. PEDIATRIC ASPECTS</a></h2>
+			<div class="collapse" id="pediatric-collapse"><!-- Section III. Collapse Container Begin--> 
+				<h3>A. Impact of peripheral vestibular dysfunction on motor development</h3>
+				<h3>B. Embryology audiovestibular system</h3>
+			</div><!-- Section III. Collapse Container End --> 
+			<!-- III. PEDIATRIC ASPECTS SECTION CLOSE -->
+	</div><!-- End of site container -->
+	
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    </body>
+</html>
